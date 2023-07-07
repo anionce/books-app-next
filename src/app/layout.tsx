@@ -1,19 +1,21 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Playfair_Display } from 'next/font/google';
 import Navigation from '../components/Navigation/Navigation';
 
-const inter = Inter({ subsets: ['latin'] });
+const playfair = Playfair_Display({ subsets: ['latin'] });
 
 export const metadata = {
-	title: 'My Next App',
+	title: 'Book App',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en'>
-			<body className={inter.className}>
-				<Navigation />
-				{children}
+			<body className={playfair.className}>
+				<div className='bodyContainer'>
+					<Navigation />
+					{children}
+				</div>
 			</body>
 		</html>
 	);
