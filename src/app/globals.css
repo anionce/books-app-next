@@ -9,7 +9,7 @@
 	/* COLORS */
 	--color-background: white;
 	--color-black: black;
-	--color-yellow: #fdc435;
+	--color-red: #660e10
 
 	/* FONT SIZES  */
 	--font-size-sm: 16px;
@@ -27,15 +27,26 @@ html,
 body {
 	max-width: 100vw;
 	overflow-x: hidden;
-	font-family: var(--main-font);
 }
 
 body {
 	color: var(--color-black);
-	background-color: var(--color-background-gray);
+	background-color: var(--color-background);
+	justify-content: center;
 }
 
 a {
 	color: inherit;
 	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.bodyContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
 }

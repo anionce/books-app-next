@@ -1,0 +1,11 @@
+.booklist {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	gap: 32px;
+}
+
+.bookArticle {
+	padding: 16px;
+	border: 1px dashed #660e10;
+}

@@ -1,0 +1,15 @@
+.navigation {
+	color: var(--color-red);
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-around;
+	gap: 16px;
+	width: 1110px;
+	height: 42px;
+	padding: 16px;
+}
+
+.navButtons {
+	display: flex;
+	gap: 16px;
+}
